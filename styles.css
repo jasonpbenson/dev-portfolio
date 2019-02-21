@@ -35,21 +35,21 @@ a {
     display: flex;
     justify-content: center;
     align-content: center;  
-    height: 10vh;
+    height: 14vh;
 }
 
 .title{
-    background-image: url("./images/suns_traced_white.png");
+    background-image: url("./images/suns_v2.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 15em;
+    width: 20em;
     height: 5rem;
     margin-top:.5rem;
 }
 
 .main{
     display: flex;
-    height: 80vh;
+    height: 75vh;
     margin: auto auto;
     flex-direction: column;
 }
@@ -107,8 +107,7 @@ a {
     width: 5em;
     height: 5em;
     border-radius: 50%;
-    background-color: #90ff00;
-    opacity: 1;
+    background: #90ff00;
     pointer-events: none;
     position: absolute;
     top: -.25vh;
@@ -122,10 +121,12 @@ a {
         
 @keyframes sonarWave {
     from {
-        opacity: .5;
+        background: #90ff00;
+        opacity: 1;
     }
     to {
-        transform: scale(4);
+        background: #f4080b;
+        transform: scale(2);
         opacity: 0;
     }
 }
@@ -232,7 +233,7 @@ a {
     }
 }
 
-.backdrop {
+.modalBackdrop {
     width: 100vw;
     height: 100vh;
     background-color: #7a5e85;
@@ -243,26 +244,129 @@ a {
     display: none;
 }
 
-.modal-1 {
+.modal {
     box-sizing: border-box;
     position: fixed;
     z-index: 200;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80vw;
-    height: 90vh;
+    width: 90vw;
+    height: 75vh;
     background: #00b4ff;
-    opacity: .90;
+    opacity: .95;
     border-radius: 5px;
     padding: 20px;
     font-family: 'Eczar', serif;
     color: white;
     text-align: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    overflow: scroll;
     display: none;
+}
+
+.modal::-webkit-scrollbar{
+    width: .2em;
+    outline: none;
+    background: none;
+}
+
+.modal::-webkit-scrollbar-thumb{
+  background-color: #90ff00;
+  outline: none;
+  margin: .2em;
+}
+
+.modal::-webkit-scrollbar-corner{
+    display: none;
+}
+
+
+.modal img{
+    display: block;
+    margin: 0 auto;
+}
+
+.modal a{
+    display: inline;
+    margin: 1rem;
+}
+
+.modal h3{
+    margin: 8px 0;
+}
+
+.modal p{
+    margin: 0;
+}
+
+.pithosContainer{
+    outline: solid 1px #90ff00;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.pithosCap{
+    width: 90%;
+}
+
+.pithosLogo{
+    width: 30%;
+}
+
+.emOceansContainer{
+    outline: solid 1px #90ff00;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.emOceansCap{
+    width: 90%;
+}
+
+.emOceansLogo{
+    width: 45%;
+}
+
+.contact{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.gardenGuy{
+    width: 100%
+}
+
+.gardenGuy img{
+    width: 80%;
+    margin: 4rem auto;
+}
+
+.textScroll{
+    height: 60px; 
+    overflow: hidden;
+    position: relative;
+    color: #90ff00;
+    font-family: 'Amarante', cursive;
+    font-size: 20px;
+}
+
+
+.textScroll p {
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    margin: 0;
+    text-align: center; 
+    transform: translateX(100%);
+    animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% { 
+    transform: translateX(100%); }
+    100% { 
+    transform: translateX(-100%); }
 }
 
 /*TABLET PORTRAIT==========================================*/
