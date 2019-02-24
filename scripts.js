@@ -57,7 +57,7 @@ $(".aboutButton").on('click', function(){
    modalOn = true;
    fadeIn()
    modal.innerHTML = `
-   <p>Lorem ipsum dolor sit amet, consectetur 
+   <p class="briefStatement">Lorem ipsum dolor sit amet, consectetur 
    adipiscing elit, sed do eiusmod tempor 
    incididunt ut labore et dolore magna aliqua.
    </p>
@@ -175,33 +175,33 @@ $(".projectsButton").on('click', function(){
    fadeIn()
    modal.innerHTML =  `
    <div class="pithosContainer">
-   <img class="pithosLogo" src="./images/pithos-logo-1.png">
-   <img class="pithosCap" src="./images/screencaps/pithos_screen1.png">
-   <a href="https://github.com/jasonpbenson/FrontEndProject-Pithos">Github</a>
-   <a href="">Live Site</a>
-   <h3>project description</h3>
-   <p>Pithos is a space that allows the user to experience an 'ordinary' 
-   thing in an unusual way. We were interested in ecosystems, and wanted to connect our 
-   ecosystem to the state of Georgia (home), and also the larger realms of history, mythology, 
-   and health; which are their own kinds of ecosystems, or containers. Pithos.</p>
-   <h3>tech</h3>
-   <p>HTML, CSS, JavaScript, jQuery, Google Maps API</p>
+      <img class="pithosLogo" src="./images/pithos-logo-1.png">
+      <img class="pithosCap" src="./images/screencaps/pithos_screen1.png">
+      <a href="https://github.com/jasonpbenson/FrontEndProject-Pithos">Github</a>
+      <a href="">Live Site</a>
+      <h3>project description</h3>
+      <p>Pithos is a space that allows the user to experience an 'ordinary' 
+      thing in an unusual way. We were interested in ecosystems, and wanted to connect our 
+      ecosystem to the state of Georgia (home), and also the larger realms of history, mythology, 
+      and health; which are their own kinds of ecosystems, or containers. Pithos.</p>
+      <h3>built with</h3>
+      <p>css3, html5, javascript, jquery</p>
    </div>
-   <div class="emOceansContainer">
-   <img class="emOceansLogo" src="./images/emOceans-logo-1.png">
-   <img class="emOceansCap" src="./images/screencaps/emOceans_screen2.png">
-   <a href="https://github.com/jasonpbenson/backEndProject">Github</a>
-   <a href="">Live Site</a>
-   <h3>project description</h3>
-   <p>
-   emOceans is a simple web application that allows you to take note of your mood 
-   every day using color and language. Each day (and each mood, each memory) forms 
-   a tiny drop in the vast and ever-shifting ocean that is every human. We hope to 
-   make the observation and appreciation of those shifts and waves more accessible, 
-   helpful, and more beautiful.
-   </p>
-   <h3>tech</h3>
-   <p>HTML, CSS, JavaScript, jQuery, Express, EJS, MySQL, chroma.js, datamuse API</p>
+      <div class="emOceansContainer">
+      <img class="emOceansLogo" src="./images/emOceans-logo-1.png">
+      <img class="emOceansCap" src="./images/screencaps/emOceans_screen2.png">
+      <a href="https://github.com/jasonpbenson/backEndProject">Github</a>
+      <a href="">Live Site</a>
+      <h3>project description</h3>
+      <p>
+      emOceans is a simple web application that allows you to take note of your mood 
+      every day using color and language. Each day (and each mood, each memory) forms 
+      a tiny drop in the vast and ever-shifting ocean that is every human. We hope to 
+      make the observation and appreciation of those shifts and waves more accessible, 
+      helpful, and more beautiful.
+      </p>
+      <h3>built with</h3>
+      <p>css3, express, html5, javascript, jquery, mysql, nodejs</p>
    </div>
    `
 })
