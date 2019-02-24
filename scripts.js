@@ -61,6 +61,112 @@ $(".aboutButton").on('click', function(){
    adipiscing elit, sed do eiusmod tempor 
    incididunt ut labore et dolore magna aliqua.
    </p>
+   <div class="aboutTechContainer">
+      <h2>front end</h2>
+      <div class="frontEnd">
+         <div class="techIcon">
+            <i class="devicon-bootstrap-plain"></i>
+            <p>bootstrap</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-css3-plain"></i>
+            <p>css3</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-html5-plain"></i>
+            <p>html5</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-javascript-plain"></i>
+            <p>javascript</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-jquery-plain"></i>
+            <p>jquery</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-react-original"></i>
+            <p>react</p>
+         </div>
+      </div>
+      <h2> back end</h2>
+      <div class="backEnd">
+         <div class="techIcon">
+            <i class="devicon-express-original"></i>
+            <p>express</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-nodejs-plain"></i>
+            <p>nodejs</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-python-plain"></i>
+            <p>python<p>
+         </div>
+      </div>
+      <h2> server/db</h2>
+      <div class="serverDb">
+         <div class="techIcon">
+            <i class="devicon-amazonwebservices-original"></i>
+            <p>aws</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-apache-plain"></i>
+            <p>apache</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-mysql-plain"></i>
+            <p>mysql</p>
+         </div>
+      </div>
+      <h2>et al.</h2>
+      <div class="etAl">  
+         <div class="techIcon">
+            <i class="devicon-apple-original"></i>
+            <p>apple</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-chrome-plain"></i>
+            <p>chrome</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-git-plain"></i>
+            <p>git</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-github-plain"></i>
+            <p>github</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-google-plain"></i>
+            <p>google</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-illustrator-plain"></i>
+            <p>illustrator</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-jasmine-plain"></i>
+            <p>jasmine</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-photoshop-plain"></i>
+            <p>photoshop</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-slack-plain"></i>
+            <p>slack</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-trello-plain"></i>
+            <p>trello</p>
+         </div>
+         <div class="techIcon">
+            <i class="devicon-visualstudio-plain"></i>
+            <p>visualstudio</p>
+         </div>
+      </div> 
+   </div>
    `
 })
 
@@ -70,9 +176,9 @@ $(".projectsButton").on('click', function(){
    modal.innerHTML =  `
    <div class="pithosContainer">
    <img class="pithosLogo" src="./images/pithos-logo-1.png">
+   <img class="pithosCap" src="./images/screencaps/pithos_screen1.png">
    <a href="https://github.com/jasonpbenson/FrontEndProject-Pithos">Github</a>
    <a href="">Live Site</a>
-   <img class="pithosCap" src="./images/screencaps/pithos_screen1.png">
    <h3>project description</h3>
    <p>Pithos is a space that allows the user to experience an 'ordinary' 
    thing in an unusual way. We were interested in ecosystems, and wanted to connect our 
@@ -83,9 +189,9 @@ $(".projectsButton").on('click', function(){
    </div>
    <div class="emOceansContainer">
    <img class="emOceansLogo" src="./images/emOceans-logo-1.png">
+   <img class="emOceansCap" src="./images/screencaps/emOceans_screen2.png">
    <a href="https://github.com/jasonpbenson/backEndProject">Github</a>
    <a href="">Live Site</a>
-   <img class="emOceansCap" src="./images/screencaps/emOceans_screen2.png">
    <h3>project description</h3>
    <p>
    emOceans is a simple web application that allows you to take note of your mood 
@@ -104,11 +210,13 @@ $(".contact").on('click', function(){
    modalOn = true;
    fadeIn()
    modal.innerHTML = `
-   <h1>Jason Benson</h1>
-   <h2>410-812-4303</h2>
-   <h2>jasonbenson3rd@gmail.com</h2>
-   <h2><a href="">GitHub</a></h2>
-   <h2><a href="">LinkdIn</a></h2>
+   <div class="contactContainer">
+      <h2>Jason Benson</h2>
+      <h2>410-812-4303</h2>
+      <h2>jasonbenson3rd@gmail.com</h2>
+      <h2><a href="">GitHub</a></h2>
+      <h2><a href="">LinkdIn</a></h2>
+   </div>
    `
 })
 

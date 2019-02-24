@@ -5,8 +5,13 @@ font-family: 'Yatra One', cursive;
 font-family: 'Amarante', cursive; */
 
 /* mobile========================================================================= */
+*{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
 body{
-    background-image: linear-gradient(#f4080b 5%, 15%, #00b4ff 100%);
+    background-image: linear-gradient(#f4080b 12%, 30%, #00b4ff 100%);
     background-size: auto 100vh;
     background-repeat: no-repeat;
     margin: 0;
@@ -19,6 +24,16 @@ a {
     color: inherit;
     width: 4rem;
     display: block;
+}
+
+button:focus {
+    outline:none;
+    outline-style: none;
+    box-shadow: none;
+    }
+
+button:active {
+    outline:none;
 }
 
 .outerWrapper{
@@ -42,6 +57,7 @@ a {
     background-image: url("./images/suns_v2.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     width: 20em;
     height: 5rem;
     margin-top:.5rem;
@@ -64,14 +80,6 @@ a {
     transition: all 1s linear;
 }
 
-.menuFlip{
-    transform: rotate(180deg);
-}
-
-.menuReverseFlip{
-    transform: rotate(-180deg);
-}
-
 .aboutButton{
     font-family: 'Eczar', serif;
     font-size: 28px;
@@ -81,7 +89,7 @@ a {
     background-image: linear-gradient(#00b4ff 10%,#f4080b);
     width: 6em;
     height: 6em;
-    border-radius: 50%;
+    clip-path: circle(5rem at center);
     text-decoration: none;
     cursor: pointer;
 }
@@ -140,7 +148,7 @@ a {
     background-image: linear-gradient(#00b4ff 10%,#f4080b);
     width: 6em;
     height: 6em;
-    border-radius: 50%;
+    clip-path: circle(5rem at center);
     text-decoration: none;
     cursor: pointer;
     transform:rotate(-180deg);
@@ -164,72 +172,72 @@ a {
 /* modal styles=========================================== */
 
 .fade-in-back {
-	opacity: 0.6;
-	animation-name: fadeInOpacityBack;
-	animation-iteration-count: 1;
-	animation-timing-function: ease;
-	animation-duration: 2s;
+    opacity: 0.6;
+    animation-name: fadeInOpacityBack;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 2s;
 }
 
 .fade-out-back {
-	opacity: 0;
-	animation-name: fadeOutOpacityBack;
-	animation-iteration-count: 1;
-	animation-timing-function: ease;
-	animation-duration: 2s;
+    opacity: 0;
+    animation-name: fadeOutOpacityBack;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 2s;
 }
 
 .fade-in-modal {
-	opacity: 1;
-	animation-name: fadeInOpacityModal;
-	animation-iteration-count: 1;
-	animation-timing-function: ease;
-	animation-duration: 2s;
+    opacity: 1;
+    animation-name: fadeInOpacityModal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 2s;
 }
 
 .fade-out-modal {
     opacity: 0;
-	animation-name: fadeOutOpacityModal;
-	animation-iteration-count: 1;
-	animation-timing-function: ease;
-	animation-duration: 2s;
+    animation-name: fadeOutOpacityModal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 2s;
 }
 
 @keyframes fadeInOpacityModal {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .9;
+    }
 }
 
 @keyframes fadeInOpacityBack {
-	0% {
-		opacity: 0;
-	}
-	60% {
-		opacity: 0.6;
-	}
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0.6;
+    }
 }
 
 @keyframes fadeOutOpacityModal {
     0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+        opacity: .9;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 
 @keyframes fadeOutOpacityBack {
     0% {
-		opacity: 0.6;
+        opacity: 0.6;
     }
     
-	100% {
-		opacity: 0;
+    100% {
+        opacity: 0;
     }
 }
 
@@ -254,8 +262,7 @@ a {
     width: 90vw;
     height: 75vh;
     background: #00b4ff;
-    opacity: .95;
-    border-radius: 5px;
+    opacity: .9;
     padding: 20px;
     font-family: 'Eczar', serif;
     color: white;
@@ -271,9 +278,9 @@ a {
 }
 
 .modal::-webkit-scrollbar-thumb{
-  background-color: #90ff00;
-  outline: none;
-  margin: .2em;
+background-color: #90ff00;
+outline: none;
+margin: .2em;
 }
 
 .modal::-webkit-scrollbar-corner{
@@ -289,6 +296,7 @@ a {
 .modal a{
     display: inline;
     margin: 1rem;
+    color: #90ff00;
 }
 
 .modal h3{
@@ -297,6 +305,79 @@ a {
 
 .modal p{
     margin: 0;
+    color: #90ff00;
+}
+
+.aboutTechContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutTechContainer h2{
+    margin: .5rem auto;
+    display: block;
+    font-size: 24px;
+}
+
+.aboutTechContainer i{
+    font-size: 32px;
+    margin: 1rem;
+}
+
+.aboutTechContainer p{
+    font-size: 16px;
+}
+
+.techIcon{
+    margin: 5px;
+    width: auto;
+}
+
+.frontEnd{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-content: center;
+    justify-content: baseline;
+    text-align: center;
+    color: #90ff00;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.backEnd{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: baseline;
+    color: #90ff00;
+    margin: 0 auto;
+}
+
+.serverDb{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: baseline;
+    margin: 0 auto;
+    color: #90ff00;
+}
+
+.etAl{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #90ff00;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .pithosContainer{
@@ -305,12 +386,14 @@ a {
     margin: 1rem 0;
 }
 
-.pithosCap{
-    width: 90%;
+.pithosLogo{
+    width: 25%;
+    padding: .75rem;
 }
 
-.pithosLogo{
-    width: 30%;
+.pithosCap{
+    width: 90%;
+    padding: .75rem;
 }
 
 .emOceansContainer{
@@ -319,16 +402,20 @@ a {
     margin: 1rem 0;
 }
 
-.emOceansCap{
-    width: 90%;
-}
-
 .emOceansLogo{
     width: 45%;
+    padding: .75rem;
 }
 
-.contact{
+.emOceansCap{
+    width: 90%;
+    padding: .75rem;
+
+}
+
+.contactContainer{
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
 }
@@ -338,26 +425,26 @@ a {
 }
 
 .gardenGuy img{
-    width: 80%;
+    width: 100%;
     margin: 4rem auto;
 }
 
 .textScroll{
-    height: 60px; 
+    height: 100px; 
     overflow: hidden;
     position: relative;
     color: #90ff00;
-    font-family: 'Amarante', cursive;
-    font-size: 20px;
 }
 
 
 .textScroll p {
     position: absolute;
-    width: 150%;
+    width: 200%;
     height: 100%;
     margin: 0;
     text-align: center; 
+    font-family: 'Amarante', cursive;
+    font-size: 28px;
     transform: translateX(100%);
     animation: scroll-left 15s linear infinite;
 }
@@ -369,15 +456,64 @@ a {
     transform: translateX(-100%); }
 }
 
-/*TABLET PORTRAIT==========================================*/
-/* @media (min-width: 640px) and (max-width: 1024px){
+@media screen and (min-width: 600px) and (max-width: 899px) {
 
+    /* modal styles=========================================== */
+
+    .pithosLogo{
+        padding: 1rem;
+    }
+
+    .pithosCap{
+        padding: 1rem;
+    }
+
+    .emOceansLogo{
+        width: 25%;
+        padding: 1rem;
+    }
+
+    .emOceansCap{
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .contact{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .gardenGuy{
+        width: 100%
+    }
+
+    .gardenGuy img{
+        width: 60%;
+        margin: 4rem auto;
+    }
+
+    .textScroll{
+        height: 60px; 
+        overflow: hidden;
+        position: relative;
+        color: #90ff00;
+        font-family: 'Amarante', cursive;
+        font-size: 24px;
+    }
+
+
+    .textScroll p {
+        position: absolute;
+        width: 150%;
+        height: 100%;
+        margin: 0;
+        text-align: center; 
+        transform: translateX(100%);
+        animation: scroll-left 10s linear infinite;
+    }
 }
 
-/*TABLET LANDSCAPE ===============================================*/ 
-/* @media (max-width: 1024px) and (min-width: 960px) and (max-height: 768px) and (min-height: 692px){
-
-} */ 
-
-/* Desktop =======================================================*/
-/* @media (min-width: 1024px){} */
+/* @media screen and (min-width: 900px) and (max-width: 1199px) { */
+   
+/* @media (min-width: 1200px) { */
