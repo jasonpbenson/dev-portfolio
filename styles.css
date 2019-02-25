@@ -5,6 +5,7 @@ font-family: 'Yatra One', cursive;
 font-family: 'Amarante', cursive; */
 
 /* mobile========================================================================= */
+/* @media screen and (max-width: 599px){ */
 *{
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent; /* For some Androids */
@@ -66,8 +67,26 @@ button:active {
 .main{
     display: flex;
     height: 75vh;
+    width: 100%;
     margin: auto auto;
     flex-direction: column;
+    overflow: scroll;
+}
+
+.main::-webkit-scrollbar{
+    width: .2em;
+    outline: none;
+    background: none;
+}
+
+.main::-webkit-scrollbar-thumb{
+    background-color: #90ff00;
+    outline: none;
+    margin: .2em;
+}
+
+.main::-webkit-scrollbar-corner{
+    display: none;
 }
 
 .menu{
@@ -86,7 +105,7 @@ button:active {
     color: #90ff00;
     border: none;
     outline: none;
-    background-image: linear-gradient(#00b4ff 10%,#f4080b);
+    background-image: linear-gradient(#f4080b 10%, #00b4ff);
     width: 6em;
     height: 6em;
     clip-path: circle(5rem at center);
@@ -99,7 +118,7 @@ button:active {
     width: 5em;
     height: 5em;
     border-radius: 50%;
-    background-color: #90ff00;
+    background-color: #00b4ff;
     outline: none;
     position: relative;
     cursor: pointer;
@@ -111,14 +130,14 @@ button:active {
 } */
 
 .sonarWave {
-    width: 5em;
-    height: 5em;
+    width: 6em;
+    height: 6em;
     border-radius: 50%;
     background: #90ff00;
     pointer-events: none;
     position: absolute;
-    top: -.25vh;
-    left: -.1vw;
+    top: -5px;
+    left: -6px;
     z-index: 1;
     }
     
@@ -144,7 +163,7 @@ button:active {
     color: #90ff00;
     border: none;
     outline: none;
-    background-image: linear-gradient(#00b4ff 10%,#f4080b);
+    background-image: linear-gradient(#f4080b 10%, #00b4ff);
     width: 6em;
     height: 6em;
     clip-path: circle(5rem at center);
@@ -166,6 +185,7 @@ button:active {
     background-size: contain;
     width: 15em;
     height: 5rem;
+    margin-bottom: 1em;
 }
 
 /* modal styles=========================================== */
@@ -302,6 +322,10 @@ margin: .2em;
     margin: 8px 0;
 }
 
+.modal h2{
+    margin: 8px;
+}
+
 .modal p{
     margin: 0;
     color: #90ff00;
@@ -417,6 +441,7 @@ margin: .2em;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    margin-top: 80px;
 }
 
 .gardenGuy{
@@ -454,6 +479,7 @@ margin: .2em;
     100% { 
     transform: translateX(-100%); }
 }
+/* } */
 
 @media screen and (min-width: 600px) and (max-width: 899px) {   
     .title{
@@ -476,8 +502,8 @@ margin: .2em;
     .sonarWave {
         width: 16em;
         height: 16em;
-        top: -4vh;
-        left: -6vw;
+        top: -45px;
+        left: -45px;
         }
 
     .projectsButton{
@@ -489,7 +515,6 @@ margin: .2em;
     
     .contact{
         width: 25em;
-        height: 10rem;
     }
     
     /* modal styles=========================================== */
@@ -552,6 +577,316 @@ margin: .2em;
     }
 }
 
-/* @media screen and (min-width: 900px) and (max-width: 1199px) { */
-   
-/* @media (min-width: 1200px) { */
+@media screen and (min-width: 900px){
+    .title{
+        width: 30em;
+        height: 8em;
+    }
+
+    .aboutButton{
+        font-size: 24px;
+        width: 8em;
+        height: 8em;
+        clip-path: circle(6rem at center);
+    }
+    
+    .homeButton{
+        width: 8em;
+        height: 8em;
+    }
+
+    .sonarWave {
+        width: 10em;
+        height: 10em;
+        top: -12px;
+        left: -12px;
+        }
+
+    .projectsButton{
+        font-size: 24px;
+        width: 8em;
+        height: 8em;
+        clip-path: circle(6rem at center);
+    }
+    
+    .contact{
+        width: 18em;
+        height: 8em;
+    }
+    
+    /* modal styles=========================================== */
+    .modal a{
+        font-size: 24px;
+    }
+
+    .modal h2{
+        font-size: 32px;
+        margin: 10px;
+    }
+    
+    .modal h2 a{
+        font-size: 32px;
+    }
+
+    .modal h3{
+        font-size: 30px;
+    }
+    
+    .modal p{
+        font-size: 24px;
+    }
+    
+    .aboutTechContainer h2{
+        font-size: 36px;
+    }
+    
+    .aboutTechContainer i{
+        font-size: 40px;
+    }
+    
+    .aboutTechContainer p{
+        font-size: 24px;
+    }
+
+    .briefStatement{
+        font-size: 30px;
+    }
+    
+    .techIcon{
+        margin: 10px;
+    }
+
+    .pithosLogo{
+        width: 12%;
+    }
+
+    .pithosCap{
+        width: 85%;
+    }
+
+    .emOceansLogo{
+        width: 20%;
+        padding: .75rem;
+    }
+
+    .emOceansCap{
+        width: 85%;
+    }
+
+    .gardenGuy img{
+        width: 50%;
+        margin: 4rem auto;
+    }
+
+    .textScroll p {
+        font-size: 44px;
+        width: 110%;
+        animation: scroll-left 15s linear infinite;
+    }
+} 
+
+@media screen and (min-width: 1024px){
+
+    .title{
+        width: 30em;
+        height: 6rem;
+        transition: all 1s;
+    }
+
+    .title:hover{
+        filter: invert(1);
+        cursor: pointer;
+    }
+
+    .menu{
+       width: 20%;
+       margin-left: 6rem;
+    }
+    
+    .aboutButton{
+        clip-path: circle(5rem at center);
+    }
+    
+    .homeButton{
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+    }
+
+    .sonarWave {
+        width: 8em;
+        height: 8em;
+        top: -16px;
+        left: -18px;
+        }
+        
+    .projectsButton{
+        clip-path: circle(5rem at center);
+    }
+    
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 10vh;
+    }
+    
+    .contact{
+        width: 15em;
+        height: 5rem;
+        margin-bottom: 1em;
+        transition: all 1s;
+    }
+
+    .contact:hover{
+        filter: invert(1);
+    }
+    
+    /* modal styles=========================================== */
+    
+    .modal {
+        top: 53%;
+        left: 63%;
+        width: 65vw;
+        height: 70vh;
+    }
+
+    .modal a{
+        font-size: 18px;
+    }
+
+    .modal a:hover{
+        color: #7a5e85;
+    }
+    
+    .modal h3{
+        font-size: 22px;
+    }
+    
+    .modal h2{
+        margin: 8px;
+        font-size: 24px;
+    }
+
+    .modal h2 a{
+        margin: 8px;
+        font-size: 24px;
+    }
+    
+    .modal p{
+        font-size: 16px;
+    }
+    
+    .aboutTechContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .aboutTechContainer h2{
+        margin: .5rem auto;
+        display: block;
+        font-size: 24px;
+    }
+    
+    .aboutTechContainer i{
+        font-size: 32px;
+        margin: 1rem;
+    }
+    
+    .aboutTechContainer p{
+        font-size: 16px;
+    }
+    
+    .techIcon{
+        margin: 5px;
+        width: auto;
+    }
+    
+    .frontEnd{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        color: #90ff00;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .backEnd{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: baseline;
+        color: #90ff00;
+        margin: 0 auto;
+    }
+    
+    .serverDb{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        margin: 0 auto;
+        color: #90ff00;
+    }
+    
+    .etAl{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #90ff00;
+        width: 80%;
+        margin: 0 auto;
+    }
+ 
+    .pithosLogo{
+        width: 10%;
+        padding: .5rem;
+    }
+    
+    .pithosCap{
+        width: 80%;
+    }
+ 
+    .emOceansLogo{
+        width: 20%;
+        padding: .5rem;
+    }
+    
+    .emOceansCap{
+        width: 85%;    
+    }
+
+    .gardenGuy{
+        width: 100%
+    }
+
+    .contactContainer{
+        margin-top: 50px;
+    }
+    
+    .gardenGuy img{
+        width: 50%;
+        margin: 4rem auto;
+    }
+    
+    .textScroll{
+        height: 90px; 
+    }
+    
+    
+    .textScroll p {
+        width: 100%;
+        font-size: 28px;
+    }
+}

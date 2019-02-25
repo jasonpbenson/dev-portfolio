@@ -22,6 +22,7 @@ function fadeIn() {
    modalBackdrop.style.display = 'block';
    modal.classList.remove('fade-out-modal')
    modal.classList.add('fade-in-modal')
+   modal.scrollTop=0;
    modalBackdrop.classList.remove('fade-out-back')
    modalBackdrop.classList.add('fade-in-back')
 }
@@ -119,7 +120,7 @@ $(".aboutButton").on('click', function(){
             <p>mysql</p>
          </div>
       </div>
-      <h2>et al.</h2>
+      <h2>et al</h2>
       <div class="etAl">  
          <div class="techIcon">
             <i class="devicon-apple-original"></i>
@@ -177,8 +178,8 @@ $(".projectsButton").on('click', function(){
    <div class="pithosContainer">
       <img class="pithosLogo" src="./images/pithos-logo-1.png">
       <img class="pithosCap" src="./images/screencaps/pithos_screen1.png">
-      <a href="https://github.com/jasonpbenson/FrontEndProject-Pithos">Github</a>
-      <a href="">Live Site</a>
+      <a href="https://github.com/jasonpbenson/FrontEndProject-Pithos">repo</a>
+      <a href="">demo</a>
       <h3>project description</h3>
       <p>Pithos is a space that allows the user to experience an 'ordinary' 
       thing in an unusual way. We were interested in ecosystems, and wanted to connect our 
@@ -190,8 +191,8 @@ $(".projectsButton").on('click', function(){
       <div class="emOceansContainer">
       <img class="emOceansLogo" src="./images/emOceans-logo-1.png">
       <img class="emOceansCap" src="./images/screencaps/emOceans_screen2.png">
-      <a href="https://github.com/jasonpbenson/backEndProject">Github</a>
-      <a href="">Live Site</a>
+      <a href="https://github.com/jasonpbenson/backEndProject">repo</a>
+      <a href="">demo</a>
       <h3>project description</h3>
       <p>
       emOceans is a simple web application that allows you to take note of your mood 
@@ -215,7 +216,7 @@ $(".contact").on('click', function(){
       <h2>410-812-4303</h2>
       <h2>jasonbenson3rd@gmail.com</h2>
       <h2><a href="">GitHub</a></h2>
-      <h2><a href="">LinkdIn</a></h2>
+      <h2><a href="">LinkedIn</a></h2>
    </div>
    `
 })
