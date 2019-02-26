@@ -105,20 +105,20 @@ button:active {
     color: #90ff00;
     border: none;
     outline: none;
-    background-image: linear-gradient(#f4080b 10%, #00b4ff);
-    width: 6em;
-    height: 6em;
-    clip-path: circle(5rem at center);
+    background-image: linear-gradient(#00b4ff 10%, #f4080b);
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
     text-decoration: none;
     cursor: pointer;
 }
 
 .homeButton{
     font-family: 'Amarante', cursive;
-    width: 5em;
-    height: 5em;
+    width: 12vh;
+    height: 12vh;
     border-radius: 50%;
-    background-color: #00b4ff;
+    background-color: #90ff00;
     outline: none;
     position: relative;
     cursor: pointer;
@@ -130,14 +130,14 @@ button:active {
 } */
 
 .sonarWave {
-    width: 6em;
-    height: 6em;
+    width: 15vh;
+    height: 15vh;
     border-radius: 50%;
     background: #90ff00;
     pointer-events: none;
     position: absolute;
-    top: -5px;
-    left: -6px;
+    top: -12px;
+    left: -10px;
     z-index: 1;
     }
     
@@ -163,10 +163,10 @@ button:active {
     color: #90ff00;
     border: none;
     outline: none;
-    background-image: linear-gradient(#f4080b 10%, #00b4ff);
-    width: 6em;
-    height: 6em;
-    clip-path: circle(5rem at center);
+    background-image: linear-gradient(#00b4ff 10%, #f4080b);
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
     text-decoration: none;
     cursor: pointer;
     transform:rotate(-180deg);
@@ -286,7 +286,8 @@ button:active {
     font-family: 'Eczar', serif;
     color: white;
     text-align: center;
-    overflow: scroll;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
     display: none;
 }
 
@@ -440,8 +441,8 @@ margin: .2em;
     display: flex;
     flex-direction: column;
     align-content: center;
+    align-items: center;
     justify-content: center;
-    margin-top: 80px;
 }
 
 .gardenGuy{
@@ -489,28 +490,28 @@ margin: .2em;
 
     .aboutButton{
         font-size: 32px;
-        width: 10em;
-        height: 10em;
-        clip-path: circle(8rem at center);
+        width: 25vh;
+        height: 25vh;
+        border-radius: 50%;
     }
     
     .homeButton{
-        width: 8em;
-        height: 8em;
+        width: 12vh;
+        height: 12vh;
     }
 
     .sonarWave {
-        width: 16em;
-        height: 16em;
-        top: -45px;
-        left: -45px;
+        width: 15vh;
+        height: 15vh;
+        top: -18px;
+        left: -18px;
         }
 
     .projectsButton{
         font-size: 32px;
-        width: 10em;
-        height: 10em;
-        clip-path: circle(8rem at center);
+        width: 25vh;
+        height: 25vh;
+        border-radius: 50%;
     }
     
     .contact{
@@ -584,29 +585,29 @@ margin: .2em;
     }
 
     .aboutButton{
-        font-size: 24px;
-        width: 8em;
-        height: 8em;
-        clip-path: circle(6rem at center);
+        font-size: 32px;
+        width: 30vh;
+        height: 30vh;
+        border-radius: 50%;
     }
     
     .homeButton{
-        width: 8em;
-        height: 8em;
+        width: 12vh;
+        height: 12vh;
     }
 
     .sonarWave {
-        width: 10em;
-        height: 10em;
-        top: -12px;
-        left: -12px;
+        width: 15vh;
+        height: 15vh;
+        top: -16px;
+        left: -16px;
         }
 
     .projectsButton{
-        font-size: 24px;
-        width: 8em;
-        height: 8em;
-        clip-path: circle(6rem at center);
+        font-size: 32px;
+        width: 30vh;
+        height: 30vh;
+        border-radius: 50%;
     }
     
     .contact{
@@ -699,30 +700,36 @@ margin: .2em;
     }
 
     .menu{
-       width: 20%;
-       margin-left: 6rem;
+       width: 30vh;
+       margin-left: 20vh;
     }
     
     .aboutButton{
-        clip-path: circle(5rem at center);
+        font-size: 32px;
+        width: 30vh;
+        height: 30vh;
+        border-radius: 50%;
     }
     
     .homeButton{
-        width: 5em;
-        height: 5em;
-        border-radius: 50%;
+        width: 12vh;
+        height: 12vh;
     }
 
     .sonarWave {
-        width: 8em;
-        height: 8em;
-        top: -16px;
-        left: -18px;
+        width: 15vh;
+        height: 15vh;
+        top: -12px;
+        left: -10px;
         }
-        
+
     .projectsButton{
-        clip-path: circle(5rem at center);
+        font-size: 32px;
+        width: 30vh;
+        height: 30vh;
+        border-radius: 50%;
     }
+    
     
     .footer{
         display: flex;
@@ -736,6 +743,7 @@ margin: .2em;
         height: 5rem;
         margin-bottom: 1em;
         transition: all 1s;
+        cursor: pointer;
     }
 
     .contact:hover{
@@ -870,10 +878,6 @@ margin: .2em;
     .gardenGuy{
         width: 100%
     }
-
-    .contactContainer{
-        margin-top: 50px;
-    }
     
     .gardenGuy img{
         width: 50%;
@@ -881,12 +885,58 @@ margin: .2em;
     }
     
     .textScroll{
-        height: 90px; 
+        height: 60px; 
     }
-    
     
     .textScroll p {
         width: 100%;
         font-size: 28px;
     }
+
+    .contactContainer{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    
+    .modal a{
+        font-size: 22px;
+    }
+    
+    .modal h3{
+        font-size: 24px;
+    }
+    
+    .modal h2{
+        margin: 8px;
+        font-size: 24px;
+    }
+
+    .modal h2 a{
+        margin: 8px;
+        font-size: 24px;
+    }
+    
+    .modal p{
+        font-size: 18px;
+    }
+
+    .aboutTechContainer i{
+        font-size: 34px;
+        margin: 1rem;
+    }
+    
+    .aboutTechContainer p{
+        font-size: 18px;
+    }
+    
+    .pithosCap{
+        width: 72%;
+    }
+    
+    .emOceansCap{
+        width: 72%;    
+    }
+
 }
