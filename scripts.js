@@ -63,7 +63,7 @@ $(".aboutButton").on('click', function(){
    incididunt ut labore et dolore magna aliqua.
    </p>
    <div class="aboutTechContainer">
-      <h2>front end</h2>
+      <h2>front-end</h2>
       <div class="frontEnd">
          <div class="techIcon">
             <i class="devicon-bootstrap-plain"></i>
@@ -90,7 +90,7 @@ $(".aboutButton").on('click', function(){
             <p>react</p>
          </div>
       </div>
-      <h2> back end</h2>
+      <h2> back-end</h2>
       <div class="backEnd">
          <div class="techIcon">
             <i class="devicon-express-original"></i>
@@ -213,8 +213,7 @@ $(".contact").on('click', function(){
    modal.innerHTML = `
    <div class="contactContainer">
       <h2>Jason Benson</h2>
-      <h2>410-812-4303</h2>
-      <h2>jasonbenson3rd@gmail.com</h2>
+      <h2>Resumé</h2>
       <h2><a href="">GitHub</a></h2>
       <h2><a href="">LinkedIn</a></h2>
    </div>
