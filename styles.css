@@ -59,8 +59,8 @@ button:active {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 20em;
-    height: 5rem;
+    max-height: 10vh;
+    width: 50vh;
     margin-top:.5rem;
 }
 
@@ -183,8 +183,9 @@ button:active {
     background-image: url("./images/shrooms_traced_green.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 15em;
-    height: 5rem;
+    background-position: center;
+    width: 30vh;
+    height: 8vh;
     margin-bottom: 1em;
 }
 
@@ -471,7 +472,7 @@ margin: .2em;
     font-family: 'Amarante', cursive;
     font-size: 28px;
     transform: translateX(100%);
-    animation: scroll-left 15s linear infinite;
+    animation: scroll-left 10s linear infinite;
 }
 
 @keyframes scroll-left {
@@ -484,8 +485,8 @@ margin: .2em;
 
 @media screen and (min-width: 600px) and (max-width: 899px) {   
     .title{
-        width: 40em;
-        height: 10rem;
+        max-height: 10vh;
+        width: 50vh;
     }
 
     .aboutButton{
@@ -515,7 +516,8 @@ margin: .2em;
     }
     
     .contact{
-        width: 25em;
+        width: 30vh;
+        height: 8vh;
     }
     
     /* modal styles=========================================== */
@@ -574,14 +576,16 @@ margin: .2em;
     }
 
     .textScroll p {
+        width: 150%;
         font-size: 44px;
+        animation: scroll-left 15s linear infinite;
     }
 }
 
 @media screen and (min-width: 900px){
     .title{
-        width: 30em;
-        height: 8em;
+        max-height: 10vh;
+        width: 50vh;
     }
 
     .aboutButton{
@@ -611,8 +615,8 @@ margin: .2em;
     }
     
     .contact{
-        width: 18em;
-        height: 8em;
+        width: 30vh;
+        height: 8vh;
     }
     
     /* modal styles=========================================== */

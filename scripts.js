@@ -17,38 +17,19 @@ $( ".homeButton" ).on('click', function(){
 let modal = document.querySelector(".modal");
 let modalBackdrop = document.querySelector(".modalBackdrop")
 
-function fadeIn() {
-   modal.style.display = 'block';
-   modalBackdrop.style.display = 'block';
-   modal.classList.remove('fade-out-modal')
-   modal.classList.add('fade-in-modal')
-   modal.scrollTop=0;
-   modalBackdrop.classList.remove('fade-out-back')
-   modalBackdrop.classList.add('fade-in-back')
-}
-
-function fadeOut() {
-   modal.classList.remove('fade-in-modal')
-   modal.classList.add('fade-out-modal')
-   modalBackdrop.classList.remove('fade-in-back')
-   modalBackdrop.classList.add('fade-out-back')
-   setTimeout(displayNone, 2000)
-}
-
-function displayNone() {
-   modal.style.display = 'none';
-   modalBackdrop.style.display = 'none';
-}
-
-$(".modal").on('click', function(){
+$(".modal").click(function(){
    if(modalOn=true){
-      fadeOut()
+      $(".modal").fadeOut("slow") && $(".modalBackdrop").fadeOut("slow");
+   }else if(modalOn=false){
+      $(".modal").fadeIn("slow") && $(".modalBackdrop").fadeIn("slow");
    }
 })
 
 $(".modalBackdrop").on('click', function(){
    if(modalOn=true){
-      fadeOut()
+      $(".modal").fadeOut("slow") && $(".modalBackdrop").fadeOut("slow");
+   }else if(modalOn=false){
+      $(".modal").fadeIn("slow") && $(".modalBackdrop").fadeIn("slow");
    }
 })
 
@@ -56,7 +37,8 @@ let modalOn = false;
 
 $(".aboutButton").on('click', function(){
    modalOn = true;
-   fadeIn()
+   $(".modal").fadeIn("slow");
+   $(".modalBackdrop").fadeIn("slow")
    modal.innerHTML = `
    <p class="briefStatement">Lorem ipsum dolor sit amet, consectetur 
    adipiscing elit, sed do eiusmod tempor 
@@ -173,13 +155,14 @@ $(".aboutButton").on('click', function(){
 
 $(".projectsButton").on('click', function(){
    modalOn = true;
-   fadeIn()
+   $(".modal").fadeIn("slow");
+   $(".modalBackdrop").fadeIn("slow");
    modal.innerHTML =  `
    <div class="pithosContainer">
       <img class="pithosLogo" src="./images/pithos-logo-1.png">
       <img class="pithosCap" src="./images/screencaps/pithos_screen1.png">
       <a href="https://github.com/jasonpbenson/FrontEndProject-Pithos">repo</a>
-      <a href="">demo</a>
+      <a href="https://jpbenson.com/pithos">demo</a>
       <h3>project description</h3>
       <p>Pithos is a space that allows the user to experience an 'ordinary' 
       thing in an unusual way. We were interested in ecosystems, and wanted to connect our 
@@ -192,7 +175,7 @@ $(".projectsButton").on('click', function(){
       <img class="emOceansLogo" src="./images/emOceans-logo-1.png">
       <img class="emOceansCap" src="./images/screencaps/emOceans_screen2.png">
       <a href="https://github.com/jasonpbenson/backEndProject">repo</a>
-      <a href="">demo</a>
+      <a href="https://jpbenson.com/emoceans">demo</a>
       <h3>project description</h3>
       <p>
       emOceans is a simple web application that allows you to take note of your mood 
@@ -209,20 +192,22 @@ $(".projectsButton").on('click', function(){
 
 $(".contact").on('click', function(){
    modalOn = true;
-   fadeIn()
+   $(".modal").fadeIn("slow");
+   $(".modalBackdrop").fadeIn("slow")
    modal.innerHTML = `
    <div class="contactContainer">
       <h2>Jason Benson</h2>
       <h2>Resumé</h2>
-      <h2><a href="">GitHub</a></h2>
-      <h2><a href="">LinkedIn</a></h2>
+      <h2><a href="https://github.com/jasonpbenson">GitHub</a></h2>
+      <h2><a href="https://www.linkedin.com/in/jason-benson-960861180/">LinkedIn</a></h2>
    </div>
    `
 })
 
 $(".title").on('click', function(){
    modalOn = true;
-   fadeIn()
+   $(".modal").fadeIn("slow");
+   $(".modalBackdrop").fadeIn("slow");
    modal.innerHTML = `
    <div class="gardenGuy">
    <img src="./images/gardenGuy.svg"/>
