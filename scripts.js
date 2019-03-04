@@ -40,12 +40,14 @@ $(".aboutButton").on('click', function(){
    $(".modal").fadeIn("slow");
    $(".modalBackdrop").fadeIn("slow")
    modal.innerHTML = `
-   <p class="briefStatement">Lorem ipsum dolor sit amet, consectetur 
-   adipiscing elit, sed do eiusmod tempor 
-   incididunt ut labore et dolore magna aliqua.
-   </p>
+   <div class="aboutHeader">
+      <h2>Jason Benson</h2>
+      <p class="briefStatement">Full-stack web developer, artist, and designer 
+      based in Atlanta, GA</p>
+      <p><a href="./files/jason-benson-resume.pdf" target="_blank">Resumé</a></p>
+   </div>
    <div class="aboutTechContainer">
-      <h2>front-end</h2>
+      <h3>front-end</h3>
       <div class="frontEnd">
          <div class="techIcon">
             <i class="devicon-bootstrap-plain"></i>
@@ -72,7 +74,7 @@ $(".aboutButton").on('click', function(){
             <p>react</p>
          </div>
       </div>
-      <h2> back-end</h2>
+      <h3> back-end</h3>
       <div class="backEnd">
          <div class="techIcon">
             <i class="devicon-express-original"></i>
@@ -87,7 +89,7 @@ $(".aboutButton").on('click', function(){
             <p>python<p>
          </div>
       </div>
-      <h2> server/db</h2>
+      <h3> server/db</h3>
       <div class="serverDb">
          <div class="techIcon">
             <i class="devicon-amazonwebservices-original"></i>
@@ -102,7 +104,7 @@ $(".aboutButton").on('click', function(){
             <p>mysql</p>
          </div>
       </div>
-      <h2>et al</h2>
+      <h3>et al</h3>
       <div class="etAl">  
          <div class="techIcon">
             <i class="devicon-apple-original"></i>
@@ -196,10 +198,11 @@ $(".contact").on('click', function(){
    $(".modalBackdrop").fadeIn("slow")
    modal.innerHTML = `
    <div class="contactContainer">
-      <h2>Jason Benson</h2>
-      <h2>Resumé</h2>
       <h2><a href="https://github.com/jasonpbenson">GitHub</a></h2>
       <h2><a href="https://www.linkedin.com/in/jason-benson-960861180/">LinkedIn</a></h2>
+   </div>
+   <div class="contactGuy">
+      <img src="./images/contactGuy.png"/>
    </div>
    `
 })
@@ -210,10 +213,10 @@ $(".title").on('click', function(){
    $(".modalBackdrop").fadeIn("slow");
    modal.innerHTML = `
    <div class="gardenGuy">
-   <img src="./images/gardenGuy.svg"/>
+      <img src="./images/gardenGuy.png"/>
    </div>
    <div class="textScroll">
-   <p>But the sea which no one tends is also a garden </p>
+      <p>But the sea which no one tends is also a garden </p>
    </div>
    `
 })
