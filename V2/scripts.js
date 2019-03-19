@@ -1,3 +1,19 @@
+// 'menu' rotation================================================
+
+let transformed = false;
+
+$( ".homeButton" ).on('click', function(){
+   if(transformed == false) {
+      document.querySelector(".menu").style.transform = "rotate(180deg)";
+      transformed=true;
+   }else if(transformed == true) {
+      document.querySelector(".menu").style.transform = "rotate(0deg)";
+      transformed = false;
+   };
+});
+
+//  'modal' functions============================================
+
 let modal = document.querySelector(".modal");
 let modalBackdrop = document.querySelector(".modalBackdrop")
 

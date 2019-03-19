@@ -44,149 +44,112 @@ button:active {
     padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     overflow: hidden
 }
 
-.header{
+.menuWrapper{
+    height: 400px;
+    width: 400px;
+    clip-path: circle(200px at center);
+    text-align: center;
+    margin-top: 15vh;
+    background-image: linear-gradient(#f4080b 12%, 30%, #00b4ff 100%);
     display: flex;
-    justify-content: center;
-    align-content: center;  
-    height: 14vh;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.title{
-    background-image: url("./images/suns_v2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    max-height: 10vh;
-    width: 50vh;
-    margin-top:.5rem;
+.menu{
+    width: 100%;
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 1rem;
+}
+
+.header p{
+    font-family: 'Eczar', serif;
+    font-size: 26px;
+    color: white;
+    margin: 0 auto;
+}
+
+.header p:hover{
+    filter: invert(1);
 }
 
 .main{
     display: flex;
-    height: 75vh;
+    width: 110%;
+    flex-direction: row; 
+    justify-content: center;
+    outline: .5px solid #90ff00;
+    margin-top: 1px;
+}
+
+.main p{
+    font-family: 'Vollkorn', serif;
+    font-size: 24px;
+    color: white;
+}
+
+.about{
+    border-right: .5px solid #90ff00;
+    padding-right: 10%;
+}
+
+.projects{
+    padding-left: 10%;
+}
+
+.contactLinks{
+    display: flex;
+    width: 110%;
+    flex-direction: row; 
+    justify-content: center;
+    border-bottom: .5px solid #90ff00;
+}
+
+.contactLinks p{
+    font-family: 'Vollkorn', serif;
+    font-size: 20px;
+    color: white;
+}
+
+.gitHub{
+    border-right: 1px solid #90ff00;
+    padding-right: 5%;
+}
+
+.linkedin{
+    border-right: 1px solid #90ff00;
+    padding: 0 5% 0 5%;
+}
+
+.resume{
+    padding-left: 5%;
+}
+
+.contactInfo{
     width: 100%;
-    margin: auto auto;
-    flex-direction: column;
-    overflow: hidden;
+    margin-top: 2.5rem;
 }
 
-.main::-webkit-scrollbar{
-    width: .2em;
-    outline: none;
-    background: none;
-}
-
-.main::-webkit-scrollbar-thumb{
-    background-color: #90ff00;
-    outline: none;
-    margin: .2em;
-}
-
-.main::-webkit-scrollbar-corner{
-    display: none;
-}
-
-.menu{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    transition: all 1s linear;
-}
-
-.aboutButton{
-    font-family: 'Eczar', serif;
-    font-size: 28px;
-    color: #90ff00;
-    border: none;
-    outline: none;
-    background-image: linear-gradient(#00b4ff 10%, #f4080b);
-    width: 30vh;
-    height: 30vh;
-    border-radius: 50%;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.homeButton{
-    font-family: 'Amarante', cursive;
-    width: 12vh;
-    height: 12vh;
-    border-radius: 50%;
-    background-color: #90ff00;
-    outline: none;
-    position: relative;
-    cursor: pointer;
-    transition: all 1s linear;
-}
-
-/* .home-rotate{
-    transform: rotate(180deg);
-} */
-
-.sonarWave {
-    width: 12vh;
-    height: 12vh;
-    border-radius: 50%;
-    background: #90ff00;
-    pointer-events: none;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    }
-    
-.sonarWave {
-    animation: sonarWave 3s linear infinite;
-}
-        
-@keyframes sonarWave {
-    from {
-        background: #90ff00;
-        opacity: 1;
-    }
-    to {
-        background: #f4080b;
-        transform: scale(2);
-        opacity: 0;
-    }
-}
-
-.projectsButton{
-    font-family: 'Eczar', serif;
-    font-size: 28px;
-    color: #90ff00;
-    border: none;
-    outline: none;
-    background-image: linear-gradient(#00b4ff 10%, #f4080b);
-    width: 30vh;
-    height: 30vh;
-    border-radius: 50%;
-    text-decoration: none;
-    cursor: pointer;
-    transform:rotate(-180deg);
-}
-
-.footer{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 10vh;
-}
-
-.contact{
-    background-image: url("./images/shrooms_traced_green.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 30vh;
-    height: 8vh;
-    margin-bottom: 1em;
+.contactInfo p{
+    font-family: 'Special Elite', cursive;
+    font-size: 18px;
+    color: #71079b;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 /* modal styles=========================================== */
@@ -378,515 +341,5 @@ margin: .2em;
 .emOceansCap{
     width: 90%;
     padding: .75rem;
-
-}
-
-/* contact modal======================================================================= */
-
-.contactContainer{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.contactGuy{
-    width: 100%;
-}
-
-.contactGuy img{
-    width: 45%;
-    margin: 4rem auto;
-}
-
-/* 'title' modal======================================================================== */
-
-.gardenGuy{
-    width: 100%
-}
-
-.gardenGuy img{
-    width: 45%;
-    margin: 4rem auto;
-}
-
-.textScroll{
-    height: 100px; 
-    overflow: hidden;
-    position: relative;
-    color: #90ff00;
-}
-
-
-.textScroll p {
-    position: absolute;
-    width: 200%;
-    height: 100%;
-    margin: 0;
-    text-align: center; 
-    font-family: 'Amarante', cursive;
-    font-size: 28px;
-    transform: translateX(100%);
-    animation: scroll-left 10s linear infinite;
-}
-
-@keyframes scroll-left {
-    0% { 
-    transform: translateX(100%); }
-    100% { 
-    transform: translateX(-100%); }
-}
-/* } */
-
-@media screen and (min-width: 600px) and (max-width: 899px) {   
-    .title{
-        max-height: 10vh;
-        width: 50vh;
-    }
-
-    .aboutButton{
-        font-size: 32px;
-        width: 25vh;
-        height: 25vh;
-        border-radius: 50%;
-    }
-    
-    .homeButton{
-        width: 12vh;
-        height: 12vh;
-    }
-
-    .sonarWave {
-        width: 12vh;
-        height: 12vh;
-        top: 0px;
-        left: 0px;
-        }
-
-    .projectsButton{
-        font-size: 32px;
-        width: 25vh;
-        height: 25vh;
-        border-radius: 50%;
-    }
-    
-    .contact{
-        width: 30vh;
-        height: 8vh;
-    }
-    
-    /* modal styles=========================================== */
-    .modal a{
-        font-size: 28px;
-    }
-
-    .modal h2{
-        font-size: 44px;
-        margin: 10px;
-    }
-    
-    .modal h2 a{
-        font-size: 44px;
-    }
-
-    .modal h3{
-        font-size: 34px;
-    }
-    
-    .modal p{
-        font-size: 28px;
-    }
-    
-    .aboutTechContainer h2{
-        font-size: 42px;
-    }
-    
-    .aboutTechContainer i{
-        font-size: 44px;
-    }
-    
-    .aboutTechContainer p{
-        font-size: 28px;
-    }
-
-    .briefStatement{
-        font-size: 28px;
-    }
-    
-    .techIcon{
-        margin: 10px;
-    }
-
-    .pithosLogo{
-        width: 20%;
-    }
-
-    .emOceansLogo{
-        width: 35%;
-        padding: .75rem;
-    }
-
-    .textScroll p {
-        width: 150%;
-        font-size: 44px;
-        animation: scroll-left 15s linear infinite;
-    }
-}
-
-@media screen and (min-width: 900px){
-    .title{
-        max-height: 10vh;
-        width: 50vh;
-    }
-
-    .aboutButton{
-        font-size: 32px;
-        width: 30vh;
-        height: 30vh;
-        border-radius: 50%;
-    }
-    
-    .homeButton{
-        width: 12vh;
-        height: 12vh;
-    }
-
-    .sonarWave {
-        width: 12vh;
-        height: 12vh;
-        top: 0px;
-        left: 0px;
-        }
-
-    .projectsButton{
-        font-size: 32px;
-        width: 30vh;
-        height: 30vh;
-        border-radius: 50%;
-    }
-    
-    .contact{
-        width: 30vh;
-        height: 8vh;
-    }
-    
-    /* modal styles=========================================== */
-    .modal a{
-        font-size: 24px;
-    }
-
-    .modal h2{
-        font-size: 32px;
-        margin: 10px;
-    }
-    
-    .modal h2 a{
-        font-size: 32px;
-    }
-
-    .modal h3{
-        font-size: 30px;
-    }
-    
-    .modal p{
-        font-size: 24px;
-    }
-    
-    .aboutTechContainer h2{
-        font-size: 36px;
-    }
-    
-    .aboutTechContainer i{
-        font-size: 40px;
-    }
-    
-    .aboutTechContainer p{
-        font-size: 24px;
-    }
-
-    .briefStatement{
-        font-size: 30px;
-    }
-    
-    .techIcon{
-        margin: 10px;
-    }
-
-    .pithosLogo{
-        width: 12%;
-    }
-
-    .pithosCap{
-        width: 85%;
-    }
-
-    .emOceansLogo{
-        width: 20%;
-        padding: .75rem;
-    }
-
-    .emOceansCap{
-        width: 85%;
-    }
-
-    .gardenGuy img{
-        width: 50%;
-        margin: 4rem auto;
-    }
-
-    .textScroll p {
-        font-size: 44px;
-        width: 110%;
-        animation: scroll-left 15s linear infinite;
-    }
-} 
-
-@media screen and (min-width: 1024px){
-
-    .title{
-        width: 50vh;
-        transition: all 1s;
-    }
-
-    .title:hover{
-        filter: invert(1);
-        cursor: pointer;
-    }
-
-    .menu{
-       width: 30vh;
-       margin-left: 20vh;
-    }
-    
-    .aboutButton{
-        font-size: 32px;
-        width: 30vh;
-        height: 30vh;
-        border-radius: 50%;
-    }
-    
-    .homeButton{
-        width: 12vh;
-        height: 12vh;
-    }
-
-    .sonarWave {
-        width: 12vh;
-        height: 12vh;
-        top: 0px;
-        left: 0px;
-        }
-
-    .projectsButton{
-        font-size: 32px;
-        width: 30vh;
-        height: 30vh;
-        border-radius: 50%;
-    }
-    
-    
-    .footer{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        height: 10vh;
-    }
-    
-    .contact{
-        width: 30vh;
-        margin-bottom: 1em;
-        transition: all 1s;
-        cursor: pointer;
-    }
-
-    .contact:hover{
-        filter: invert(1);
-    }
-    
-    /* modal styles=========================================== */
-    
-    .modal {
-        top: 53%;
-        left: 63%;
-        width: 65vw;
-        height: 70vh;
-    }
-
-    .modal a{
-        font-size: 18px;
-    }
-
-    .modal a:hover{
-        color: #7a5e85;
-    }
-    
-    .modal h3{
-        font-size: 22px;
-    }
-    
-    .modal h2{
-        margin: 8px;
-        font-size: 24px;
-    }
-
-    .modal h2 a{
-        margin: 8px;
-        font-size: 24px;
-    }
-    
-    .modal p{
-        font-size: 16px;
-    }
-    
-    .aboutTechContainer{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    .aboutTechContainer h2{
-        margin: .5rem auto;
-        display: block;
-        font-size: 24px;
-    }
-    
-    .aboutTechContainer i{
-        font-size: 32px;
-        margin: 1rem;
-    }
-    
-    .aboutTechContainer p{
-        font-size: 16px;
-    }
-    
-    .techIcon{
-        margin: 5px;
-        width: auto;
-    }
-    
-    .frontEnd{
-        display: flex;
-        flex-direction: row;
-        flex-flow: wrap;
-        align-content: center;
-        justify-content: center;
-        text-align: center;
-        color: #90ff00;
-        width: 80%;
-        margin: 0 auto;
-    }
-    
-    .backEnd{
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: baseline;
-        color: #90ff00;
-        margin: 0 auto;
-    }
-    
-    .serverDb{
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
-        margin: 0 auto;
-        color: #90ff00;
-    }
-    
-    .etAl{
-        display: flex;
-        flex-direction: row;
-        flex-flow: wrap;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: #90ff00;
-        width: 80%;
-        margin: 0 auto;
-    }
- 
-    .pithosLogo{
-        width: 10%;
-        padding: .5rem;
-    }
-    
-    .pithosCap{
-        width: 70%;
-    }
- 
-    .emOceansLogo{
-        width: 20%;
-        padding: .5rem;
-    }
-    
-    .emOceansCap{
-        width: 70%;    
-    }
-
-    .contactGuy img{
-        width: 15%;
-    }
-    
-    .gardenGuy img{
-        width: 15%;
-    }
-    
-    .textScroll{
-        height: 40px; 
-    }
-    
-    .textScroll p {
-        width: 100%;
-        font-size: 28px;
-    }
-
-}
-
-@media screen and (min-width: 1400px){
-    
-    .modal a{
-        font-size: 22px;
-    }
-    
-    .modal h3{
-        font-size: 24px;
-    }
-    
-    .modal h2{
-        margin: 8px;
-        font-size: 24px;
-    }
-
-    .modal h2 a{
-        margin: 8px;
-        font-size: 24px;
-    }
-    
-    .modal p{
-        font-size: 18px;
-    }
-
-    .aboutTechContainer i{
-        font-size: 34px;
-        margin: 1rem;
-    }
-    
-    .aboutTechContainer p{
-        font-size: 18px;
-    }
-    
-    .pithosCap{
-        width: 72%;
-    }
-    
-    .emOceansCap{
-        width: 72%;    
-    }
 
 }
