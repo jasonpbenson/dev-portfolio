@@ -2,7 +2,8 @@
 /* font-family: 'Eczar', serif;
 font-family: 'Astloch', cursive;
 font-family: 'Yatra One', cursive;
-font-family: 'Amarante', cursive; */
+font-family: 'Amarante', cursive; 
+font-family: 'Vollkorn', serif;*/
 
 /* mobile========================================================================= */
 /* @media screen and (max-width: 599px){ */
@@ -37,6 +38,8 @@ button:active {
     outline:none;
 }
 
+/* shared/mobile=============================================== */
+
 .outerWrapper{
     height: 100vh;
     width: 100vw;
@@ -50,11 +53,11 @@ button:active {
 }
 
 .menuWrapper{
-    height: 400px;
-    width: 400px;
-    clip-path: circle(200px at center);
+    height: 350px;
+    width: 350px;
+    clip-path: circle(175px at center);
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 0;
     background-image: linear-gradient(#f4080b 12%, 30%, #00b4ff 100%);
     display: flex;
     flex-direction: row;
@@ -77,14 +80,10 @@ button:active {
 }
 
 .header p{
-    font-family: 'Eczar', serif;
+    font-family: 'Vollkorn', serif;
     font-size: 26px;
     color: white;
     margin: 0 auto;
-}
-
-.header p:hover{
-    filter: invert(1);
 }
 
 .main{
@@ -102,13 +101,15 @@ button:active {
     color: white;
 }
 
-.about{
+.projects{
     border-right: .5px solid #90ff00;
     padding-right: 10%;
+    width: 90px;
 }
 
-.projects{
+.about{
     padding-left: 10%;
+    width: 90px;
 }
 
 .contactLinks{
@@ -116,7 +117,9 @@ button:active {
     width: 110%;
     flex-direction: row; 
     justify-content: center;
+    align-items: center;
     border-bottom: .5px solid #90ff00;
+    text-align: center;
 }
 
 .contactLinks p{
@@ -128,25 +131,29 @@ button:active {
 .gitHub{
     border-right: 1px solid #90ff00;
     padding-right: 5%;
+    width: fit-content;
+    text-align: center;
 }
 
 .linkedin{
     border-right: 1px solid #90ff00;
     padding: 0 5% 0 5%;
+    width: fit-content;
 }
 
 .resume{
     padding-left: 5%;
+    width: fit-content;
 }
 
 .contactInfo{
     width: 100%;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
 }
 
 .contactInfo p{
     font-family: 'Special Elite', cursive;
-    font-size: 18px;
+    font-size: 16px;
     color: #71079b;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -172,12 +179,9 @@ button:active {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90vw;
-    height: 75vh;
+    height: 90vh;
     background: #00b4ff;
-    opacity: .9;
     padding: 20px;
-    font-family: 'Eczar', serif;
-    color: white;
     text-align: center;
     overflow-x: scroll;
     scroll-behavior: smooth;
@@ -200,41 +204,35 @@ margin: .2em;
     display: none;
 }
 
-
-.modal img{
-    display: block;
-    margin: 0 auto;
-}
-
-.modal a{
-    display: inline;
-    margin: 1rem;
-    color: #90ff00;
-}
-
-.modal h3{
-    margin: 8px 0;
-}
-
-.modal h2{
-    margin: 8px;
-}
-
-.modal p{
-    margin: 0;
-    color: #90ff00;
-}
-
 /* 'about' modal======================================================================= */
 
 .aboutHeader{
-    outline: solid 1px #90ff00;
+    border-bottom: solid 2px #90ff00;
     padding: 1rem;
     margin: 1rem 0;
 }
 
+.imgContainer{
+    width: 150px;
+    height: 150px;
+    clip-path: circle(75px at center);
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
 .aboutHeader img{
-    width: 40%;
+    width: 100%;
+}
+
+.aboutHeader h3{
+    font-family: 'Vollkorn', serif;
+    color: white;
+}
+
+.aboutHeader p{
+    font-family: 'Vollkorn', serif;
+    font-size: 18px;
+    color: #90ff00;
 }
 
 .aboutTechContainer{
@@ -250,6 +248,16 @@ margin: .2em;
     margin: .5rem auto;
     display: block;
     font-size: 24px;
+    color: white;
+    font-family: 'Vollkorn', serif;
+}
+
+.aboutTechContainer h3{
+    margin: .5rem auto;
+    display: block;
+    font-size: 24px;
+    color: #71079b;
+    font-family: 'Vollkorn', serif;
 }
 
 .aboutTechContainer i{
@@ -258,7 +266,7 @@ margin: .2em;
 }
 
 .aboutTechContainer p{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .techIcon{
@@ -311,14 +319,47 @@ margin: .2em;
 
 /* 'projects' modal==================================================================== */
 
+.elgContainer{
+    border-bottom: solid 2px #90ff00;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.elgLogo{
+    width: 70%;
+    padding: .75rem;
+}
+
+.elgCap{
+    width: 90%;
+    padding: .75rem;
+}
+
+.emOceansContainer{
+    border-bottom: solid 2px #90ff00;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.emOceansLogo{
+    width: 55%;
+    padding: .75rem;
+}
+
+.emOceansCap{
+    width: 90%;
+    padding: .75rem;
+
+}
+
 .pithosContainer{
-    outline: solid 1px #90ff00;
+    border-bottom: solid 2px #90ff00;
     padding: 1rem;
     margin: 1rem 0;
 }
 
 .pithosLogo{
-    width: 25%;
+    width: 35%;
     padding: .75rem;
 }
 
@@ -327,19 +368,362 @@ margin: .2em;
     padding: .75rem;
 }
 
-.emOceansContainer{
-    outline: solid 1px #90ff00;
-    padding: 1rem;
-    margin: 1rem 0;
+.projectLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.emOceansLogo{
-    width: 45%;
-    padding: .75rem;
+.projectLinks a{
+    font-size: 24px;
+    color: #90ff00;
+    font-family: 'Vollkorn', serif;
 }
 
-.emOceansCap{
-    width: 90%;
-    padding: .75rem;
+.projectsContainer h3{
+    font-size: 24px;
+    color: white;
+    font-family: 'Vollkorn', serif;
+    margin: 16px auto 12px auto;
+}
 
+.projectsContainer p{
+    font-size: 18px;
+    color: #90ff00;
+    font-family: 'Vollkorn', serif;
+}
+
+/* tablet====================================================== */
+@media screen and (min-width: 600px) and (max-width: 899px) { 
+    .menuWrapper{
+        height: 600px;
+        width: 600px;
+        clip-path: circle(300px at center);
+    }
+
+    .header{
+        margin-bottom: 2rem;
+    }
+
+    .header p{
+        font-size: 48px;
+    }
+
+    .main p{
+        font-size: 40px;
+    }
+
+    .projects{
+        padding-right: 10%;
+        border-right: #90ff00 solid 1px;
+        width: 180px;
+    }
+
+    .about{
+        padding-left: 10%;
+        width: 180px;
+    }
+
+    .contactLinks p{
+        font-size: 30px;
+    }
+
+    .gitHub{
+        width: 120px;
+    }
+
+    .linkedin{
+        width: 120px;
+    }
+
+    .resume{
+        width: 120px;
+    }
+
+    .contactInfo{
+        margin-top: 3rem;
+    }
+
+    .contactInfo p{
+        font-family: 'Special Elite', cursive;
+        font-size: 26px;
+        color: #71079b;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    /* 'about' modal======================================================================= */
+
+    .aboutHeader{
+        margin: 1rem 0 2rem 0;
+    }
+
+    .imgContainer{
+        width: 200px;
+        height: 200px;
+        clip-path: circle(100px at center);
+    }
+
+    .aboutHeader h3{
+        font-size: 34px;
+    }
+    
+    .aboutHeader p{
+        font-size: 30px;
+    }
+
+    .aboutTechContainer h2{
+        font-size: 34px;
+    }
+
+    .aboutTechContainer h3{
+        font-size: 28px;
+    }
+
+    .aboutTechContainer i{
+        font-size: 44px;
+    }
+
+    .aboutTechContainer p{
+        font-size: 20px;
+    }
+
+    .techIcon{
+        margin: 5px;
+        width: auto;
+    }
+
+    .frontEnd{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        color: #90ff00;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .backEnd{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: baseline;
+        color: #90ff00;
+        margin: 0 auto;
+    }
+
+    .serverDb{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        margin: 0 auto;
+        color: #90ff00;
+    }
+
+    .etAl{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #90ff00;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* 'projects' modal==================================================================== */
+
+    .elgLogo{
+        width: 50%;
+    }
+
+    .emOceansLogo{
+        width: 45%;
+        padding: .75rem;
+    }
+
+    .pithosLogo{
+        width: 25%;
+    }
+    
+    .pithosCap{
+        width: 90%;
+        padding: .75rem;
+    }
+    
+    .projectLinks{
+        margin: 1rem auto;
+    }
+    
+    .projectLinks a{
+        font-size: 36px;
+        border-bottom: #71079b 2px solid;
+        width: fit-content;
+    }
+    
+    .projectsContainer h3{
+        font-size: 36px;
+    }
+    
+    .projectsContainer p{
+        font-size: 28px;
+    }
+
+}
+
+/* desktop_reg================================================== */
+@media screen and (min-width: 1024px){
+
+    .menuWrapper{
+        height: 500px;
+        width: 500px;
+        clip-path: circle(250px at center);
+    }
+
+    .header{
+        margin-bottom: 1rem;
+    }
+
+    .header p{
+        font-size: 40px;
+    }
+
+    .main p{
+        font-size: 34px;
+    }
+
+    .main p:hover{
+        color: #90ff00;
+        cursor: pointer;
+    }
+
+    .projects{
+        padding-right: 8%;
+        border-right: #90ff00 solid 1px;
+        width: 150px;
+    }
+
+    .about{
+        padding-left: 8%;
+        width: 150px;
+    }
+
+    .contactLinks p{
+        font-size: 28px;
+    }
+
+    .contactLinks p:hover{
+        color: #90ff00;
+        cursor: pointer;
+    }
+
+    .gitHub{
+        width: 100px;
+    }
+
+    .linkedin{
+        width: 100px;
+    }
+
+    .resume{
+        width: 100px;
+    }
+
+    .contactInfo{
+        margin-top: 2rem;
+    }
+
+    .contactInfo p{
+        font-size: 18px;
+    }
+
+    /* modal================================================================== */
+    .modal {
+        width: 70vw;
+        height: 90vh;
+    }
+    /* 'about' modal======================================================================= */
+
+    .aboutHeader{
+        margin: 1rem 0 2rem 0;
+    }
+
+    .imgContainer{
+        width: 150px;
+        height: 150px;
+        clip-path: circle(75px at center);
+    }
+
+    .aboutHeader h3{
+        font-size: 24px;
+    }
+    
+    .aboutHeader p{
+        font-size: 20px;
+    }
+
+    .aboutTechContainer h2{
+        font-size: 24px;
+    }
+
+    .aboutTechContainer h3{
+        font-size: 22px;
+    }
+
+    .aboutTechContainer i{
+        font-size: 44px;
+    }
+
+    .aboutTechContainer p{
+        font-size: 18px;
+    }
+
+    /* 'projects' modal==================================================================== */
+
+    .elgLogo{
+        width: 25%;
+    }
+
+    .elgCap{
+        width: 70%;
+    }
+
+    .emOceansLogo{
+        width: 25%;
+    }
+
+    .emOceansCap{
+        width: 70%;
+    }
+
+    .pithosLogo{
+        width: 15%;
+    }
+
+    .pithosCap{
+        width: 70%;
+    }
+
+    .projectLinks{
+        margin: 1rem auto;
+    }
+    
+    .projectLinks a{
+        font-size: 28px;
+        border-bottom: #71079b 2px solid;
+        width: fit-content;
+    }
+    
+    .projectsContainer h3{
+        font-size: 28px;
+    }
+    
+    .projectsContainer p{
+        font-size: 20px;
+    }
 }
