@@ -30,9 +30,9 @@ $(".about").on('click', function(){
       </div>
       <h3>full-stack web developer, artist, and designer based in atlanta</h3>
       <p class="briefStatement">I approach projects with a dual interest in design and programming, and 
-      work to generate ui that is playful, exploratory,  and idiosyncratic. 
+      work to generate UI that is playful, exploratory,  and idiosyncratic. 
       My fine art background provides a basis for critical thinking and creative 
-      problem-solving that undergirds my lifelong interest in making things.</p>
+      problem solving that undergirds my lifelong impulse to make things.</p>
    </div>
    <div class="aboutTechContainer"> 
       <h2>skills/experience</h2>
@@ -156,9 +156,9 @@ $(".projects").on('click', function(){
    <div class="projectsContainer">
       <div class="elgContainer">
          <img class="elgLogo" src="./images/enchanted_splatter_OffRegTrace_ed.png">
-         <div class="projectLinks">
+         <div class="elgProjectLinks">
             <a href="https://github.com/jasonpbenson/enchantedLifeGoods">repo</a>
-            <a href="https://enchantedlifegoods.jpbenson.com">demo</a>
+            <h2>[demo coming soon]</h2>
          </div>
          <img class="elgCap" src="./images/screencaps/elg_screen1.png">
          <h3>project description</h3>

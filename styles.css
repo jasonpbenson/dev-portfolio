@@ -180,7 +180,7 @@ button:active {
     transform: translate(-50%, -50%);
     width: 90vw;
     height: 90vh;
-    background: #00b4ff;
+    background: #47b4e2;
     padding: 20px;
     text-align: center;
     overflow-x: scroll;
@@ -353,7 +353,6 @@ margin: .2em;
 }
 
 .pithosContainer{
-    border-bottom: solid 2px #90ff00;
     padding: 1rem;
     margin: 1rem 0;
 }
@@ -378,6 +377,29 @@ margin: .2em;
     font-size: 24px;
     color: #90ff00;
     font-family: 'Vollkorn', serif;
+    border-bottom: #71079b 2px solid;
+}
+
+.elgProjectLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.elgProjectLinks a{
+    font-size: 24px;
+    color: #90ff00;
+    font-family: 'Vollkorn', serif;
+    border-bottom: #71079b 2px solid;
+    margin-bottom: 5px;
+}
+
+.elgProjectLinks h2{
+    font-size: 18px;
+    color: white;
+    font-family: 'Vollkorn', serif;
+    margin: 0;
 }
 
 .projectsContainer h3{
@@ -565,6 +587,14 @@ margin: .2em;
         border-bottom: #71079b 2px solid;
         width: fit-content;
     }
+
+    .elgProjectLinks a{
+        font-size: 36px;
+    }
+    
+    .elgProjectLinks h2{
+        font-size: 30px;
+    }
     
     .projectsContainer h3{
         font-size: 36px;
@@ -577,7 +607,7 @@ margin: .2em;
 }
 
 /* desktop_reg================================================== */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 900px){
 
     .menuWrapper{
         height: 500px;
@@ -654,13 +684,13 @@ margin: .2em;
     }
 
     .imgContainer{
-        width: 150px;
-        height: 150px;
-        clip-path: circle(75px at center);
+        width: 200px;
+        height: 200px;
+        clip-path: circle(100px at center);
     }
 
     .aboutHeader h3{
-        font-size: 24px;
+        font-size: 26px;
     }
     
     .aboutHeader p{
@@ -717,6 +747,27 @@ margin: .2em;
         font-size: 28px;
         border-bottom: #71079b 2px solid;
         width: fit-content;
+    }
+
+    .projectLinks a:hover{
+        filter: invert(1);
+    }
+
+    .elgProjectLinks{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .elgProjectLinks a:hover{
+        filter: invert(1);
+    }
+
+    .elgProjectLinks a{
+        font-size: 28px;
+    }
+    
+    .elgProjectLinks h2{
+        font-size: 22px;
     }
     
     .projectsContainer h3{
