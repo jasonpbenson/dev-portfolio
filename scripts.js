@@ -1,19 +1,20 @@
 let modal = document.querySelector(".modal");
 let modalBackdrop = document.querySelector(".modalBackdrop")
+let modalButton = document.querySelector(".modalButton")
 
-$(".modal").click(function(){
+$(".modalButton").click(function(){
    if(modalOn=true){
-      $(".modal").fadeOut("slow") && $(".modalBackdrop").fadeOut("slow");
+      $(".modal").fadeOut("slow") && $(".modalBackdrop").fadeOut("slow") && $(".modalButton").fadeOut("slow");
    }else if(modalOn=false){
-      $(".modal").fadeIn("slow") && $(".modalBackdrop").fadeIn("slow");
+      $(".modal").fadeIn("slow") && $(".modalBackdrop").fadeIn("slow") && $(".modalButton").fadeIn("slow");
    }
 })
 
 $(".modalBackdrop").on('click', function(){
    if(modalOn=true){
-      $(".modal").fadeOut("slow") && $(".modalBackdrop").fadeOut("slow");
+      $(".modal").fadeOut("slow") && $(".modalBackdrop").fadeOut("slow") && $(".modalButton").fadeOut("slow") ;
    }else if(modalOn=false){
-      $(".modal").fadeIn("slow") && $(".modalBackdrop").fadeIn("slow");
+      $(".modal").fadeIn("slow") && $(".modalBackdrop").fadeIn("slow") && $(".modalButton").fadeIn("slow");
    }
 })
 
@@ -23,6 +24,7 @@ $(".about").on('click', function(){
    modalOn = true;
    $(".modal").fadeIn("slow");
    $(".modalBackdrop").fadeIn("slow")
+   $(".modalButton").fadeIn("slow")
    modal.innerHTML = `
    <div class="aboutHeader">
       <div class="imgContainer">
@@ -152,6 +154,7 @@ $(".projects").on('click', function(){
    modalOn = true;
    $(".modal").fadeIn("slow");
    $(".modalBackdrop").fadeIn("slow");
+   $(".modalButton").fadeIn("slow")
    modal.innerHTML =  `
    <div class="projectsContainer">
       <div class="elgContainer">
