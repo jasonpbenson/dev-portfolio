@@ -157,7 +157,7 @@ $(".projects").on('click', function(){
       <div class="elgContainer">
          <img class="elgLogo" src="./images/enchanted_splatter_OffRegTrace_ed.png">
          <div class="elgProjectLinks">
-            <a href="https://github.com/jasonpbenson/enchantedLifeGoods">repo</a>
+            <a href="https://github.com/jasonpbenson/enchantedLifeGoods" target="_blank">repo</a>
             <h2>[demo coming soon]</h2>
          </div>
          <img class="elgCap" src="./images/screencaps/elg_screen1.png">
@@ -173,8 +173,8 @@ $(".projects").on('click', function(){
       <div class="emOceansContainer">
          <img class="emOceansLogo" src="./images/emOceans-logo-1.png">
          <div class="projectLinks">
-            <a href="https://github.com/jasonpbenson/backEndProject">repo</a>
-            <a href="https://emoceans.jpbenson.com">demo</a>
+            <a href="https://github.com/jasonpbenson/backEndProject" target="_blank">repo</a>
+            <a href="https://emoceans.jpbenson.com" target="_blank">demo</a>
          </div>
          <img class="emOceansCap" src="./images/screencaps/emOceans_screen2.png">
          <h3>project description</h3>
@@ -191,8 +191,8 @@ $(".projects").on('click', function(){
       <div class="pithosContainer">
          <img class="pithosLogo" src="./images/pithos-logo-1.png">
          <div class="projectLinks">
-            <a href="https://github.com/jasonpbenson/FrontEndProject-Pithos">repo</a>
-            <a href="https://pithos.jpbenson.com">demo</a>
+            <a href="https://github.com/jasonpbenson/FrontEndProject-Pithos" target="_blank">repo</a>
+            <a href="https://pithos.jpbenson.com" target="_blank">demo</a>
          </div>
          <img class="pithosCap" src="./images/screencaps/pithos_screen1.png">
          <h3>project description</h3>
