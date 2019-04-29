@@ -27,9 +27,6 @@ $(".about").on('click', function(){
    $(".modalButton").fadeIn("slow")
    modal.innerHTML = `
    <div class="aboutHeader">
-      <div class="imgContainer">
-         <img class="mugShot" src="./images/IMG_8992.JPG"/>
-      </div>
       <h3>full-stack web developer, artist, and designer based in atlanta</h3>
       <p class="briefStatement">I approach projects with a dual interest in design and programming, and 
       work to generate UI that is playful, exploratory,  and idiosyncratic. 
