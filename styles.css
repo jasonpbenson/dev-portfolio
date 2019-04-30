@@ -156,14 +156,14 @@ button:active {
 .contactInfo{
     width: 100%;
     margin-top: 1rem;
+    margin-bottom: 60px;
 }
 
 .contactInfo p{
-    font-family: 'Eczar', serif;
-    font-size: 16px;
+    font-family: '1942report', serif;
+    font-size: 12px;
     color: #71079b;
     margin: 0 auto;
-    margin-bottom: 10px;
 }
 
 /* modal styles=========================================== */
@@ -485,7 +485,7 @@ margin: .2em;
     }
 
     .contactInfo{
-        margin-top: 2rem;
+        margin: 1rem auto 5rem auto;
     }
 
     .contactInfo p{
@@ -705,6 +705,7 @@ margin: .2em;
     .contactInfo p{
         font-size: 18px;
         font-family: '1942report', cursive;
+        margin-bottom: 1rem;
     }
 
     /* modal================================================================== */
