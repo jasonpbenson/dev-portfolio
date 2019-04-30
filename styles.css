@@ -1,6 +1,12 @@
-/* font-family: 'Vollkorn', serif;
-font-family: 'Eczar', serif;
-font-family: 'Special Elite', cursive; */
+@font-face {
+    font-family: '1942report';
+    src: url('1942-webfont.woff') format('woff');
+  }
+
+@font-face {
+    font-family: 'Eczar';
+    src: url('Eczar-Regular-webfont.woff') format('woff');
+  }
 
 /* mobile========================================================================= */
 /* @media screen and (max-width: 599px){ */
@@ -80,7 +86,7 @@ button:active {
 }
 
 .header p{
-    font-family: 'Vollkorn', serif;
+    font-family: 'Eczar', serif;
     font-size: 26px;
     color: white;
     margin: 0 auto;
@@ -97,7 +103,7 @@ button:active {
 }
 
 .main p{
-    font-family: 'Vollkorn', serif;
+    font-family: 'Eczar', serif;
     font-size: 24px;
     color: white;
 }
@@ -124,7 +130,7 @@ button:active {
 }
 
 .contactLinks p{
-    font-family: 'Vollkorn', serif;
+    font-family: 'Eczar', serif;
     font-size: 20px;
     color: white;
 }
@@ -241,12 +247,12 @@ margin: .2em;
 }
 
 .aboutHeader h3{
-    font-family: 'Vollkorn', serif;
+    font-family: 'Eczar', serif;
     color: white;
 }
 
 .aboutHeader p{
-    font-family: 'Vollkorn', serif;
+    font-family: 'Eczar', serif;
     font-size: 18px;
     color: #90ff00;
 }
@@ -265,7 +271,7 @@ margin: .2em;
     display: block;
     font-size: 24px;
     color: white;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Eczar', serif;
 }
 
 .aboutTechContainer h3{
@@ -273,7 +279,7 @@ margin: .2em;
     display: block;
     font-size: 24px;
     color: #71079b;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Eczar', serif;
 }
 
 .aboutTechContainer i{
@@ -392,7 +398,7 @@ margin: .2em;
 .projectLinks a{
     font-size: 24px;
     color: #90ff00;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Eczar', serif;
     border-bottom: #71079b 2px solid;
 }
 
@@ -406,7 +412,7 @@ margin: .2em;
 .elgProjectLinks a{
     font-size: 24px;
     color: #90ff00;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Eczar', serif;
     border-bottom: #71079b 2px solid;
     margin-bottom: 5px;
 }
@@ -414,21 +420,21 @@ margin: .2em;
 .elgProjectLinks h2{
     font-size: 18px;
     color: white;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Eczar', serif;
     margin: 0;
 }
 
 .projectsContainer h3{
     font-size: 24px;
     color: white;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Eczar', serif;
     margin: 16px auto 12px auto;
 }
 
 .projectsContainer p{
     font-size: 18px;
     color: #90ff00;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Eczar', serif;
 }
 
 /* tablet====================================================== */
@@ -698,7 +704,7 @@ margin: .2em;
 
     .contactInfo p{
         font-size: 18px;
-        font-family: 'Special Elite', cursive;
+        font-family: '1942report', cursive;
     }
 
     /* modal================================================================== */
